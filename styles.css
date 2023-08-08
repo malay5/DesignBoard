@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.tool-palette {
+    width: 30%;
+    /* padding: 20px; */
+    background-color: white;
+    border-right: 1px solid #ccc;
+    z-index: 999;
+}
+
+.canvas {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.arrow {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.draggable-image{
+    position: absolute;
+}
+.draggable-text{
+    position: absolute;
+}
+.collapse-button {
+    position: relative;
+    cursor: pointer;
+    top:30%;
+    left:95%
+}
+.collapsed {
+    /* width: 0;
+    padding: 0;
+    border: none;
+    display: none; */
+    left:-28%;
+    position:relative;
+}
+.locked {
+    /* pointer-events:; Prevent interaction with locked elements */
+    opacity: 0.7; /* Reduce opacity of locked elements */
+}
+/* .collapsed .tool-palette {
+    left: -100px; /* Push the tool palette to the left when collapsed 
+} */
+.tools-first{
+    padding: 20px
+}
